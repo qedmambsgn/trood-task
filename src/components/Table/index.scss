@@ -1,0 +1,128 @@
+*{font-family: Snell Roundhand, cursive;}
+
+.arrow{
+  display: flex;
+  align-items: center;
+  width: 24px;
+}
+
+.table{
+  table{
+    width: 100%;
+    border-spacing: 0 5px;
+  }
+  button{
+    background: transparent;
+    border-radius: 5px;
+    border: rgb(235, 35, 228) solid 1px;
+    color: rgb(235, 35, 228);
+    padding: 3px 10px;
+  }
+  button:hover{
+    background: rgb(235, 35, 228);
+    color: #FFF;
+  }
+}
+
+.headerNameCell{
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  align-items: center;
+  span{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.headerTokenCell{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameCell{
+  display: flex;
+  align-items: center;
+}
+
+.sortArrow{
+  display: flex;
+  flex-direction: column;
+  .sortArrowUp{
+    transform: translateY(9px);
+  }
+  .sortArrowUpVolume{
+    transform: translateY(14px);
+  }
+  .sortArrowDown{
+    transform: translateY(-9px);
+  }
+}
+
+.customSelect{
+  background-color: #4d4d4d;
+  text-align: center;
+  color: #FFFFFF;
+  appearance: none;
+  width: 40px;
+  border-radius: 20%;
+  height: 34px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.ball{
+  &-green{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(96, 240, 29);
+    margin: 0 15px;
+  }
+  &-yellow{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(240, 233, 29);
+    margin: 0 15px;
+  }
+  &-red{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(240, 43, 29);
+    margin: 0 15px;
+  }
+}
+
+.volumeSpan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableRow {
+  &-green{
+    background-color: rgba(96, 240, 29, 0.25);
+    text-align: center;
+    td{
+      padding: 16px 0;
+    }
+  }
+  &-yellow{
+    background-color: rgba(240, 233, 29, 0.25);
+    text-align: center;
+    td{
+      padding: 16px 0;
+    }
+  }
+  &-red{
+    background-color: rgba(240, 43, 29, 0.25);
+    text-align: center;
+    td{
+      padding: 16px 0;
+    }
+  }
+}
